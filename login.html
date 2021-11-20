@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="./atomic_Css/color.css" />
+    <link rel="stylesheet" href="./atomic_Css/display.css" />
+    <link rel="stylesheet" href="./atomic_Css/font.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="empty"></div>
+      <div class="logo flex-jc-center flex-ai-center">
+        <a href="index.html"><h1>BonkCheems</h1></a>
+      </div>
+      <div class="nav_link flex-jc-center flex-ai-center">
+        <a href="login.html">
+          <button class="bg_color-error">
+            <span class="font_size-20">Đăng nhập</span>
+          </button>
+        </a>
+        <a href="register.html">
+          <button class="bg_color-secondary">
+            <span class="font_size-20">Đăng kí</span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="login_box flex-column flex-ai-center">
+      <h1>Đăng nhập vào BonkCheems</h1>
+      <div class="username flex-row mar_top-40px">
+        <span class="font_size-span">Tài khoản</span>
+        <input
+          class="username_box"
+          type="text"
+          name=""
+          id="username"
+          placeholder="  Tên đăng nhập hoặc email"
+        />
+      </div>
+      <div class="password flex-row mar_top-40px">
+        <span class="font_size-span">Mật khẩu</span>
+        <input
+          class="username_box"
+          type="password"
+          name=""
+          id="password"
+          placeholder="  Mật khẩu"
+        />
+      </div>
+      <a class="forgot_password flex-row mar_top-40px link" href="./">
+        <div class="question_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <span>Quên mật khẩu?</span>
+      </a>
+      <a class="google_login flex-row link" href="./">
+        <div class="google_icon">
+          <img
+            src="https://img.icons8.com/material-rounded/20/000000/google-logo.png"
+          />
+        </div>
+        <span>Đăng nhập bằng Google</span>
+      </a>
+      <a class="facebook_login flex-row link" href="./">
+        <div class="facebook_icon">
+          <img
+            src="https://img.icons8.com/material-rounded/20/000000/facebook-new.png"
+          />
+        </div>
+        <span>Đăng nhập bằng Facebook</span>
+      </a>
+      <div class="login_button">
+        <button class="bg_color-error" id="btn">
+          <span class="font_size-20">Đăng nhập</span>
+        </button>
+        <button class="bg_color-secondary">
+          <span class="font_size-20">Đăng kí</span>
+        </button>
+      </div>
+      <script src="login.js"></script>
+    </div>
+  </body>
+</html>

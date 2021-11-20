@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav_bar {
+  height: 60px;
+  width: 100vw;
+  background-color: rgb(238, 207, 109, 0.3);
+  display: flex;
+}
+
+.empty {
+  flex: 1;
+}
+
+.logo {
+  flex: 3;
+  margin-left: 72px;
+}
+
+.nav_link {
+  flex: 1;
+}
+
+.nav_bar div {
+  display: flex;
+}
+
+.nav_link-1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.separator_line {
+  border-bottom: 1px solid black;
+}
+
+.nav_link button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.nav_link .bg_color-error:hover {
+  border: 1px solid rgb(255, 89, 94);
+  background-color: white;
+  color: rgb(255, 89, 94);
+}
+
+.nav_link .bg_color-secondary:hover {
+  border: 1px solid rgb(135, 214, 141);
+  background-color: white;
+  color: rgb(135, 214, 141);
+}
+
+.nav_link a {
+  margin: 10px 20px;
+}
+
+.nav_link button {
+  height: 40px;
+  width: 120px;
+  background-color: rgba(0, 238, 255, 1);
+}
+
+.bonk {
+  display: flex;
+  flex-direction: column;
+}
+
+.infor {
+  text-align: center;
+}
+
+.bonks {
+  position: relative;
+  height: 450px;
+}
+
+.cheem {
+  position: absolute;
+  left: 36%;
+  top: 160px;
+  z-index: -1;
+}
+
+.cheem img {
+  width: 300px;
+  height: 300px;
+}
+
+.baseball_bat {
+  position: absolute;
+  left: 30%;
+}
+
+.baseball_bat img::selection {
+  color: transparent;
+  background: transparent;
+}
+
+.message_board {
+  visibility: visible;
+  display: flex;
+  margin: 0 30%;
+  padding: 20px 0 0;
+  background-color: rgb(255, 89, 94);
+  font-size: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.message_board i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

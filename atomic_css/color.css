@@ -1,0 +1,27 @@
+:root {
+    --primary:rgb(0, 161, 228);
+    --secondary:rgb(135, 214, 141);
+    --error:rgb(255, 89, 94);
+    --text-primary:rgb(0, 0, 0);
+    --info:rgb(255, 236, 81);
+}
+
+.bg_color-primary {
+    background-color: var(--primary);
+}
+
+.bg_color-secondary {
+    background-color: var(--secondary);
+}
+
+.bg_color-error {
+    background-color: var(--error);
+}
+
+.text_color-primary {
+    color: var(--primary);
+}
+
+.bg_color-info {
+    background-color: var(--info);
+}

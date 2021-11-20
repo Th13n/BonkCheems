@@ -1,0 +1,25 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-jc-center {
+    justify-content: center;
+}
+
+.flex-ai-center {
+    align-items: center;
+}
+
+.mar_top-40px {
+    margin-top: 40px;
+}

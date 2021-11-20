@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./atomic_css/display.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav_bar">
+        <div class="empty"></div>
+        <div class="logo flex-jc-center flex-ai-center"><a href="index.html"><h1>BonkCheems</h1></a></div>
+        <div class="nav_link flex-jc-center flex-ai-center" id="check"></div>
+      </div>
+      <div class="bonk" id="bonk">
+        <div class="infor">
+          <h1>Hello <span id="userName"></span></h1>
+          <p>Your total "bonks" is: <span id="score">0</span></p>
+        </div>
+        <div class="bonks" id="bonks">
+          <div class="baseball_bat" id="baseball_bat">
+            <img
+              src="./image/baseballbat-removebg-preview.png"
+              alt=""
+              id="baseball_bat"
+            />
+          </div>
+          <div class="cheem">
+            <img src="./image/cheems.png" alt="" id="cheem" />
+          </div>
+        </div>
+      </div>
+      <div class="message_board flex-jc-center flex-ai-center" id="message">
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
