@@ -5,7 +5,7 @@ const userNameDIV = document.getElementById("userName");
 const scoreDIV = document.getElementById("score");
 const user = JSON.parse(localStorage.getItem("currentUser"));
 const checkbox = document.getElementById("check");
-const message = document.getElementById("message")
+const message = document.getElementById("message");
 function bonkUser() {
   baseballbat.style.transform = "rotate(90deg)";
   setTimeout(function () {
@@ -33,17 +33,17 @@ function bonkNoUser() {
   setTimeout(function () {
     baseballbat.style.transform = "rotate(0deg)";
   }, 100);
-  score=Number(localStorage.getItem('score'))
-  score++
-  localStorage.removeItem('score')
-  localStorage.setItem('score',String(score))
+  score = Number(localStorage.getItem("score"));
+  score++;
+  localStorage.removeItem("score");
+  localStorage.setItem("score", String(score));
   scoreDIV.innerHTML = score;
 }
 if (user == undefined) {
-  if(localStorage.getItem('score')){
-    localStorage.removeItem('score')
+  if (localStorage.getItem("score")) {
+    localStorage.removeItem("score");
   }
-  localStorage.setItem('score','0')
+  localStorage.setItem("score", "0");
   checkbox.innerHTML = ` <a href="login.html">
     <button class="bg_color-error">
         <span class="font_size-20">Đăng nhập</span>
@@ -56,22 +56,22 @@ if (user == undefined) {
 </a>`;
   userNameDIV.innerHTML = `User`;
   scoreDIV.innerHTML = `0`;
-  message.innerHTML=`<p>Hãy đăng nhập để lưu số điểm của bạn</p>
-  <i class="times circle icon" id='close'></i>`
-  message.style.visibility='visible'
-  const btn = document.getElementById('close')
-  function hide(){
-    message.style.visibility='hidden'
+  message.innerHTML = `<p>Hãy đăng nhập để lưu số điểm của bạn</p>
+  <i class="times circle icon" id='close'></i>`;
+  message.style.visibility = "visible";
+  const btn = document.getElementById("close");
+  function hide() {
+    message.style.visibility = "hidden";
   }
-  btn.onclick=hide
-  click.onclick=bonkNoUser
+  btn.onclick = hide;
+  click.onclick = bonkNoUser;
 } else {
   checkbox.innerHTML = `<a href="login.html">
     <button class="bg_color-error" id='logout'>
         <span class="font_size-20">Đăng xuất</span>
     </button>
 </a>`;
-message.style.visibility='hidden'
+  message.style.visibility = "hidden";
   const logoutbtn = document.getElementById("logout");
   function log_out() {
     localStorage.removeItem("currentUser");
@@ -83,8 +83,6 @@ message.style.visibility='hidden'
   });
   userNameDIV.innerHTML = `${info.email}`;
   scoreDIV.innerHTML = `${info.score}`;
-  message.innerHTML=``
-  click.onclick=bonkUser
+  message.innerHTML = ``;
+  click.onclick = bonkUser;
 }
-
-
