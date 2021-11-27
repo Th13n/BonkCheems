@@ -58,6 +58,7 @@ if (user == undefined) {
   scoreDIV.innerHTML = `0`;
   message.innerHTML=`<p>Hãy đăng nhập để lưu số điểm của bạn</p>
   <i class="times circle icon" id='close'></i>`
+  message.style.visibility='visible'
   const btn = document.getElementById('close')
   function hide(){
     message.style.visibility='hidden'
@@ -70,6 +71,7 @@ if (user == undefined) {
         <span class="font_size-20">Đăng xuất</span>
     </button>
 </a>`;
+message.style.visibility='hidden'
   const logoutbtn = document.getElementById("logout");
   function log_out() {
     localStorage.removeItem("currentUser");
