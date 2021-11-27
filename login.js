@@ -1,5 +1,5 @@
-if(localStorage.getItem('score')){
-  localStorage.removeItem('score')
+if (localStorage.getItem("score")) {
+  localStorage.removeItem("score");
 }
 if (localStorage.getItem("user") == undefined) {
   localStorage.setItem("user", "[]");
